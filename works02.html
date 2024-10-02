@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasK you design</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./colorbox/colorbox.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "ygh1tnu",
+        scriptTimeout: 3000,
+        async: true,
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"
+    integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./colorbox/jquery.colorbox-ja.js"></script>
+</head>
+
+<body>
+  <div class="site__wrapper">
+    <!--ヘッダー-->
+
+    <header id="header">
+      <div class="header__contents">
+        <h1>
+          <a class="header__logo" href="./index.html">
+            <img src="./img/logo.png" alt="task logo">
+          </a>
+        </h1>
+
+        <!--ハンバーガーメニュー-->
+
+        <div class="hamburger">
+          <span></span>
+        </div>
+
+        <!--ナビゲーションメニュー-->
+
+        <nav class="header_nav">
+          <span></span>
+          <ul>
+            <li><a href="./index.html#service">SERVICE</a></li>
+            <li><a href="./index.html#top-works">WORKS</a></li>
+            <li><a href="./index.html#top-about">ABOUT</a></li>
+            <li><a href="./index.html#top-contact">CONTACT</a></li>
+            <li>
+              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+                me!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--スクロールダウン-->
+
+    <div class="scroll">
+      <span>Scroll</span>
+    </div>
+    <div class="back-to-top">
+      <a href="#"><span>Page Top</span></a>
+    </div>
+
+    <section id="works">
+      <div class="works__area">
+        <div class="section-title-area">
+          <img src="./img/title_back.png" alt="title_back">
+          <h3 class="section__title">WORKS</h3>
+        </div>
+
+        <div class="mocup__area">
+          <img src="./img/cafe_site_mocup.jpg" alt="カフェサイト（架空サイト）モックアップ">
+        </div>
+      </div>
+      <div class="works-detail__area">
+        <div class="text__area-wrapper">
+          <div class="detail-title__area">
+            <p>
+              <span class="works_sub">WEB</span>カフェサイト（架空サイト）
+            </p>
+          </div>
+          <div class="detail__table">
+            <dl>
+              <dt>担当範囲</dt>
+              <dd>コーディング</dd>
+
+              <dt>制作期間</dt>
+              <dd>4週間</dd>
+
+              <dt>使用ツール</dt>
+              <dd>HTML／CSS／JavaScript／jQuery</dd>
+
+              <dt>ターゲット</dt>
+              <dd>コーヒーにこだわりのある男女（20～50代）　</dd>
+            </dl>
+          </div>
+          <div class="detail__text">
+            デザインカンプから忠実にサイトを再現し、スマートフォンやタブレットなど様々な環境でもストレスなく見ることができるように、レスポンシブに対応したコーディングをしています。またスライダーやモーダルウィンドウなど動きをJavaScriptやｊQueryを使用して実装しています。
+          </div>
+        </div>
+      </div>
+      <div class="works__btn-area">
+        <div class="works__btn works__btn-pc">
+          <a href="#PC"><span>PC</span></a>
+        </div>
+        <div class="works__btn works__btn-sp">
+          <a href="#SP"><span>SP</span></a>
+        </div>
+        <div class="works__btn">
+          <a class="iframe" href="./works-detail/works-detail02.html" title="">
+            <span>view all</span></a>
+        </div>
+      </div>
+      <div class="works__detail-img">
+        <div id="PC" class="box-shadow">
+          <img src="./img/cafe_site.jpg" alt="カフェサイトPC（架空サイト）">
+        </div>
+        <div id="SP">
+          <ul>
+            <li class="SP-img box-shadow">
+              <img src="./img/cafe_site_sp.jpg" alt="カフェサイトSP（架空サイト）">
+            </li>
+            <li class="SP-img box-shadow">
+              <img src="./img/cafe_site_sp.jpg" alt="カフェサイトSP（架空サイト）">
+            </li>
+            <li class="SP-img box-shadow">
+              <img src="./img/cafe_site_sp.jpg" alt="カフェサイトSP（架空サイト）">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="prevnext-icon__wrapper">
+        <a href="./works01.html" class="prev-icon"></a>
+        <a href="./works.html" class="archive-icon"><img src="./img/works_detail_list_icon.png" alt="">
+        </a>
+        <a href="./works03.html" class="next-icon"></a>
+      </div>
+    </section>
+
+    <!--footer-->
+
+    <footer>
+      <div class="footer__wrapper">
+        <picture>
+          <source srcset="./img/footer-bg-sp.png" media="(max-width:800px)"><img src="./img/footer_back.png"
+            alt="フッター背景">
+        </picture>
+        <div class="footer__area">
+          <div class="footer__inner">
+            <a href="./index.html#">
+              <img src="./img/footer_logo.png" alt="TasK logo"></a>
+            <a href="#">
+              <img src="./img/insta_logo.png" alt="instagram logo"></a>
+          </div>
+          <div class="copyright">&COPY; 2024 TasK</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(function () {
+      $(".hamburger").click(function () {
+        $(".hamburger").toggleClass("open");
+        $(".header_nav").fadeToggle();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".iframe").colorbox({
+        rel: "colorbox-groupe1",
+        iframe: true,
+        width: "80%",
+        height: "80%",
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        var scroll = $('.scroll');
+        if ($(this).scrollTop() > 100) {
+          scroll.fadeOut();
+        } else {
+          scroll.fadeIn();
+        }
+      })
+    });
+  </script>
+  <script>
+    $(function () {
+      var topBtn = $('.back-to-top');
+      topBtn.hide();
+      //スクロールが300に達したらボタン表示
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

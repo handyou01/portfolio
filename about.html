@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasK you design</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "ygh1tnu",
+        scriptTimeout: 3000,
+        async: true,
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div class="site__wrapper">
+    <!--ヘッダー-->
+
+    <header id="header">
+      <div class="header__contents">
+        <h1>
+          <a class="header__logo" href="./index.html">
+            <img src="./img/logo.png" alt="task logo">
+          </a>
+        </h1>
+
+        <!--ハンバーガーメニュー-->
+
+        <div class="hamburger">
+          <span></span>
+        </div>
+
+        <!--ナビゲーションメニュー-->
+
+        <nav class="header_nav">
+          <span></span>
+          <ul>
+            <li><a href="./index.html#service">SERVICE</a></li>
+            <li><a href="./index.html#top-works">WORKS</a></li>
+            <li><a href="./index.html#top-about">ABOUT</a></li>
+            <li><a href="./index.html#top-contact">CONTACT</a></li>
+            <li>
+              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+                me!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--スクロールダウン-->
+
+    <div class="scroll">
+      <span>Scroll</span>
+    </div>
+    <div class="back-to-top">
+      <a href="#"><span>Page Top</span></a>
+    </div>
+
+    <!--タイトル-->
+
+    <div id="about" class="section-title-area">
+      <img src="./img/title_back.png" alt="">
+      <h3 class="section__title">ABOUT</h3>
+    </div>
+
+    <!--コンテンツ-->
+
+    <section class="about__contents">
+      <ul>
+        <li class="about__contents-inner">
+          <div class="about__contents-title">
+            <img src="./img/about_title_back.png" alt="">
+            <h4 id="me">ME</h4>
+          </div>
+          <div class="about__area about__area-me">
+            <div class="me__img">
+              <img src="./img/me-img.png" alt="サイトウユウコ">
+            </div>
+            <div class="about__text about__me-text">
+              <div class="about__contents-name">
+                <span>サイトウ　ユウコ</span>
+              </div>
+              1981年秋田県生まれ。海のそばで18年間過ごしました。<br>
+              秋田、岐阜、神奈川と移り住み、現在は千葉県在住です。<br>
+              小さいころからモノづくりや手先を動かすことが好きで、自分の手で何かを作り出す仕事や職人と呼ばれる人にずっと憧れを抱いていました。<br>
+              15年務めていた動物関連の会社を辞めたことをきっかけに、自分でデザインを作り上げるということに興味を持ち、40歳を過ぎてからですが職業訓練校やスクールにてwebデザイン、グラフィックデザインを学び始めました。<br>
+              微力ではありますが、人と人とのつながりを大切に、お客様とお客様の課題に丁寧に向き合って、多くの方のチカラになれるよう努力していきたいと考えています。
+            </div>
+          </div>
+        </li>
+        <li class="about__contents-inner">
+          <div class="about__contents-title">
+            <img src="./img/about_title_back.png" alt="">
+            <h4 id="task">TasK</h4>
+          </div>
+          <div class="about__area">
+            <div class="about__task-text">
+              <div class="about__prev-text">
+                コンセプトは<br>
+                I will help you do your task whenever you need it<br>
+                ― あなたのタスクをお助けしますー
+              </div>
+              <div class="about__text">
+                私の名前には「祐」という字が使われています。この字は「助ける」という意味を持ち「たすく」とも読みます。
+                「task」はラテン語で「触ってする」という意味を持ち、転じて英語の「課題、仕事」という意味になっているそうです。そこから自分の手で作ったデザインでお客様のタスク（課題）の助けになりたいという想いを込めて「TasK」という屋号にしました。
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="about__contents-inner">
+          <div class="about__contents-title">
+            <img src="./img/about_title_back.png" alt="">
+            <h4 id="logo">LOGO</h4>
+          </div>
+          <div class="about__area">
+            <div class="about__contents-logo">
+              <img src="./img/logo_img.png" alt="TasK ロゴ制作の過程">
+            </div>
+            <div class="about__contents-logo-sp">
+              <img src="./img/logo_img_01.png" alt="logo01">
+              <img src="./img/logo_img_02.png" alt="logo02">
+              <span class="logo02"></span>
+              <img src="./img/logo_img_03.png" alt="logo03">
+            </div>
+            <div class="about__logo-text">
+              <div class="about__text">
+                ロゴマークはタスクを「＋9（たすく）」と読み変えて、数の多い様子を表す「9」と多くの可能性を秘めた「＋」をモチーフに作成しました。
+                円は人との和を表し、たくさんの人との出会い・繋がりがありますように、という想いを込めています。また、お客様に寄り添っている様子や手と鉛筆が机に向かってデザインをしている様子をイメージしました。
+                たくさんの人との出会いから多くのアイデアが生まれ、そのアイデアでたくさんの人の力になりたいという決意の表れでもあります。
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="footer__wrapper">
+        <picture>
+          <source srcset="./img/footer-bg-sp.png" media="(max-width:800px)"><img src="./img/footer_back.png"
+            alt="フッター背景">
+        </picture>
+        <div class="footer__area">
+          <div class="footer__inner">
+            <a href="./index.html#">
+              <img src="./img/footer_logo.png" alt="TasK logo"></a>
+            <a href="">
+              <img src="./img/insta_logo.png" alt="instagram logo"></a>
+          </div>
+          <div class="copyright">&COPY; 2024 TasK</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(function () {
+      $(".hamburger").click(function () {
+        $(".hamburger").toggleClass("open");
+        $(".header_nav").fadeToggle();
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        var scroll = $('.scroll');
+        if ($(this).scrollTop() > 100) {
+          scroll.fadeOut();
+        } else {
+          scroll.fadeIn();
+        }
+      })
+    });
+  </script>
+  <script>
+    $(function () {
+      var topBtn = $('.back-to-top');
+      topBtn.hide();
+      //スクロールが300に達したらボタン表示
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

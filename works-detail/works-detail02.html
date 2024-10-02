@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasK you design</title>
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../colorbox/colorbox.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "ygh1tnu",
+        scriptTimeout: 3000,
+        async: true,
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"
+    integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../colorbox/jquery.colorbox-ja.js"></script>
+</head>
+
+<body>
+  <div class="colorbox__wrapper">
+    <div class="colorobx-inner02">
+      <div class="colorbox__detail-img-pc">
+        <p><span class="sofia-pro">PC</span>表示</p>
+        <img src="../img/cafe_site.jpg" alt="カフェサイトPC（架空サイト）">
+      </div>
+      <div class="colorbox__detail-img-sp">
+        <p><span class="sofia-pro">SP</span>表示</p>
+        <img src="../img/cafe_site_sp.jpg" alt="カフェサイトSP（架空サイト）">
+      </div>
+    </div>
+  </div>
+
+  <!--pagenation icon-->
+
+  <div class="prevnext-icon__wrapper colorbox-prevnext-icon__wrapper">
+    <a href="./works-detail01.html" class="prev-icon"></a>
+    <a href="../works.html" class="archive-icon"><img src="../img/works_detail_list_icon.png" alt="">
+    </a>
+    <a href="./works-detail03.html" class="next-icon"></a>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      // Colorboxをiframeリンクに適用
+      $(".iframe").colorbox({
+        iframe: true,
+        width: "80%",
+        height: "80%",
+      });
+
+      // ポップアップを閉じて親ウィンドウで遷移
+      $(".archive-icon").on("click", function (e) {
+        e.preventDefault(); // デフォルト動作を無効化
+
+        // Colorboxが定義されているか確認して閉じる処理を実行
+        if ($.colorbox) {
+          console.log("Colorboxを閉じます");
+
+          // 手動でポップアップを閉じる処理
+          $(".cboxOverlay, #colorbox").fadeOut(function () {
+            $(this).remove(); // Colorboxの要素を手動で削除
+            window.parent.location.href = "../works.html"; // 親ウィンドウでページ遷移
+          });
+        } else {
+          console.error("Colorboxが正しく読み込まれていません");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

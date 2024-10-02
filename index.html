@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasK you design</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "ygh1tnu",
+        scriptTimeout: 3000,
+        async: true,
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div class="site__wrapper">
+    <!--ヘッダー-->
+
+    <header id="header">
+      <div class="header__contents">
+        <h1>
+          <a class="header__logo" href="">
+            <img src="./img/logo.png" alt="task logo">
+          </a>
+        </h1>
+
+        <!--ハンバーガーメニュー-->
+
+        <div class="hamburger">
+          <span></span>
+        </div>
+
+        <!--ナビゲーションメニュー-->
+
+        <nav class="header_nav">
+          <span></span>
+          <ul>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#top-works">WORKS</a></li>
+            <li><a href="#top-about">ABOUT</a></li>
+            <li><a href="#top-contact">CONTACT</a></li>
+            <li>
+              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+                me!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--メインビジュアル-->
+
+    <div id="home" class="mainvisual">
+      <picture>
+        <source srcset="./img/mv_2x.png" media="(max-width:800px)">
+        <img class="main__img" src="./img/mainvsual.png" alt="差しのべる手">
+      </picture>
+    </div>
+
+    <!--スクロールダウン-->
+
+    <div class="scroll__area">
+      <div class="scroll">
+        <span>Scroll</span>
+      </div>
+      <div class="back-to-top">
+        <a href="#"><span>Page Top</span></a>
+      </div>
+    </div>
+
+    <!--コンテンツ-->
+
+    <section class="main__copy">
+      <h2>あなたのタスクをお助けします</h2>
+      <p>I will help you do your task whenever you need it</p>
+      <div class="main__lead">
+        あなたのチカラになりたい。<br>
+        今まで出会ったあなたの、これから出会うあなたのチカラに。<br>
+        悩み事はありませんか？<br>
+        あなたに寄り添って課題解決のためのデザインを提供いたします。<br>
+        デザインのチカラであなたのサポートをさせてください。
+      </div>
+    </section>
+
+    <section class="main__copy-sp">
+      <h2>あなたのタスクを<br>お助けします</h2>
+      <p>I will help you do your task<br>whenever you need it</p>
+      <div class="main__lead">
+        あなたのチカラになりたい。<br>
+        今まで出会ったあなたの、<br>これから出会うあなたのチカラに。<br>
+        悩み事はありませんか？<br>
+        あなたに寄り添って課題解決のための<br>デザインを提供いたします。<br>
+        デザインのチカラであなたの<br>サポートをさせてください。
+      </div>
+    </section>
+
+    <!--service-->
+
+    <section id="service">
+      <div class="top-section-title-area">
+        <img src="./img/title_back.png" alt="">
+        <h3 class="section__title">SERVICE</h3>
+      </div>
+      <div class="service-area">
+        <div class="service-area__inner">
+          <div class="service__img">
+            <img class="service__subtitle-bg-color" src="./img/service_img_back.png" alt="背景の円">
+            <img class="service__subtitle-img" src="./img/graphic_img.png" alt="グラフィック制作をしている女の人のイラスト">
+          </div>
+          <div class="service__contents">
+            <div class="subtitle__area">
+              <h4 class="service__subtitle">graphic</h4>
+            </div>
+            <div class="service__text">
+              <p>
+                ロゴ、名刺、チラシやポスターなどのグラフィックデザインを承ります。お客様の思いをヒアリングで丁寧に伺って、形にするお手伝いをいたします。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="service-area__inner service-area__inner-center">
+          <div class="service__img">
+            <img class="service__subtitle-bg-color" src="./img/service_img_back.png" alt="背景の円">
+            <img class="service__subtitle-img" src="./img/web_img.png" alt="web制作をしている女の人のイラスト">
+          </div>
+          <div class="service__contents">
+            <div class="subtitle__area">
+              <h4 class="service__subtitle">web</h4>
+            </div>
+            <div class="service__text">
+              <p>
+                WEBサイトやLPサイト、バナーなどのWEB周りのデザインを承ります。丁寧にヒアリングを行い、お客様の課題解決に向けたデザインの提案をしています。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="service-area__inner">
+          <div class="service__img">
+            <img class="service__subtitle-bg-color" src="./img/service_img_back.png" alt="背景の円">
+            <img class="service__subtitle-img" src="./img/cording_img.png" alt="コーディングをしている女の人のイラスト">
+          </div>
+          <div class="service__contents">
+            <div class="subtitle__area">
+              <h4 class="service__subtitle">cording</h4>
+            </div>
+            <div class="service__text">
+              <p>
+                HTML、CSS、JavaScriptを用いて動きのあるサイトを作ることができます。レスポンシブに対応したサイトの制作も可能です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--service sp-->
+
+      <div class="service-area__sp">
+        <div class="service-area__inner-sp">
+          <div class="service__subtitle-outer">
+            <div class="subtitle__area">
+              <h4 class="service__subtitle">graphic</h4>
+            </div>
+            <div class="service__img">
+              <img class="service__subtitle-bg-color" src="./img/service_img_back.png" alt="背景の円">
+              <img class="service__subtitle-img" src="./img/graphic_img.png" alt="グラフィック制作をしている女の人のイラスト">
+            </div>
+          </div>
+          <div class="service__text">
+            <p>ロゴ、名刺、チラシやポスターなどのグラフィックデザインを承ります。お客様の思いをヒアリングで丁寧に伺って、形にするお手伝いをいたします。</p>
+          </div>
+        </div>
+        <div class="service-area__inner-sp">
+          <div class="service__subtitle-outer">
+            <div class="service__img">
+              <img class="service__subtitle-bg-color" src="./img/service_img_back.png" alt="背景の円">
+              <img class="service__subtitle-img" src="./img/web_img.png" alt="グラフィック制作をしている女の人のイラスト">
+            </div>
+            <div class="subtitle__area">
+              <h4 class="service__subtitle">web</h4>
+            </div>
+          </div>
+          <div class="service__text">
+            <p>WEBサイトやLPサイト、バナーなどのWEB周りのデザインを承ります。丁寧にヒアリングを行い、お客様の課題解決に向けたデザインの提案をしています。</p>
+          </div>
+        </div>
+        <div class="service-area__inner-sp">
+          <div class="service__subtitle-outer">
+            <div class="subtitle__area">
+              <h4 class="service__subtitle">cording</h4>
+            </div>
+            <div class="service__img">
+              <img class="service__subtitle-bg-color" src="./img/service_img_back.png" alt="背景の円">
+              <img class="service__subtitle-img" src="./img/cording_img.png" alt="グラフィック制作をしている女の人のイラスト">
+            </div>
+          </div>
+          <div class="service__text">
+            <p>HTML、CSS、JavaScriptを用いて動きのあるサイトを作ることができます。レスポンシブに対応したサイトの制作も可能です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--works-->
+
+    <section id="top-works">
+      <div class="top-works__area">
+        <div class="top-section-title-area">
+          <img src="./img/title_back.png" alt="">
+          <h3 class="section__title">WORKS</h3>
+        </div>
+        <div class="top-works-img__area">
+          <ul class="top-works-list">
+            <li>
+              <a href="./works.html#works01">
+                <img class="works-img" src="./img/works_img01.png" alt="美容室ホームページ">
+                <span class="works_sub">WEB</span><span class="works-list-title">美容室ホームページ</span>
+              </a>
+            </li>
+            <li>
+              <a href="./works.html#works04">
+                <img class="works-img" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                <span class="works_sub">Graphic</span><span class="works-list-title">焼き鳥屋ポスター</span>
+              </a>
+            </li>
+            <li>
+              <a href="./works.html#works02">
+                <img class="works-img" src="./img/works_img02.png" alt="カフェホームページ">
+                <span class="works_sub">WEB</span><span class="works-list-title">カフェホームページ</span>
+              </a>
+            </li>
+          </ul>
+          <div class="to-works__btn">
+            <a href="works.html"><span>view all</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+
+    <section id="top-about">
+      <div class="top-section-title-area">
+        <img src="./img/title_back.png" alt="">
+        <h3 class="section__title">ABOUT</h3>
+      </div>
+      <div class="top-about__area">
+        <div class="about__container">
+          <div class="logo-area">
+            <picture>
+              <source srcset="./img/mv_logo.png" media="(max-width:800px)">
+              <img src="./img/logo.png" alt="TasKロゴ">
+            </picture>
+          </div>
+          <div class="about__text_area">
+            <div class="about__name-area">
+              <div class="about__name">サイトウ　ユウコ</div>
+            </div>
+            <div class="top-about__text">
+              チラシ、パンフレット、ロゴ、名刺などのグラフィックデザイン、バナーやLP、ホームページなどのwebデザインを承っています。
+              お客様の課題の解決に向けて、まずは丁寧なヒアリングをいたします。ご不明な点やこんなことはできるのかなといった些細な疑問などなんでもご相談ください。<br>
+              お客様と目指す方向を一緒に確認しながらデザインを作成いたします。
+            </div>
+          </div>
+        </div>
+        <div class="about__btn-area">
+          <div class="about__btn">
+            <a href="./about.html#about"><span>ME</span></a>
+          </div>
+          <div class="about__btn">
+            <a href="./about.html#task"><span>TasK</span></a>
+          </div>
+          <div class="about__btn">
+            <a href="./about.html#logo"><span>LOGO</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact-->
+
+    <section id="top-contact">
+      <div class="top-section-title-area">
+        <img src="./img/title_back.png" alt="">
+        <h3 class="section__title">CONTACT</h3>
+      </div>
+      <div class="top-contact__area">
+        <div class="top-contact__btn">
+          <a href="./contact.html">お問い合わせはこちらから</a>
+        </div>
+        <div class="top-contact__text">
+          お仕事のご依頼やご相談、こんなことできますか？<br>
+          などお気軽にお問合せください。<br>
+          お問い合わせフォームまたはインスタのDMでも受け付けています。
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+
+    <footer>
+      <div class="footer__wrapper">
+        <picture>
+          <source srcset="./img/footer-bg-sp.png" media="(max-width:800px)"><img src="./img/footer_back.png"
+            alt="フッター背景">
+        </picture>
+        <div class="footer__area">
+          <div class="footer__inner">
+            <a href="#home">
+              <img src="./img/footer_logo.png" alt="TasK logo"></a>
+            <a href="">
+              <img src="./img/insta_logo.png" alt="instagram logo"></a>
+          </div>
+          <div class="copyright">&copy; 2024 TasK</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(function () {
+      $(".hamburger").click(function () {
+        $(".hamburger").toggleClass("open");
+        $(".header_nav").fadeToggle();
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      var topBtn = $('#header');
+      topBtn.hide();
+      //スクロールが300に達したらボタン表示
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        var scroll = $('.scroll');
+        if ($(this).scrollTop() > 100) {
+          scroll.fadeOut();
+        } else {
+          scroll.fadeIn();
+        }
+      })
+    });
+  </script>
+  <script>
+    $(function () {
+      var topBtn = $('.back-to-top');
+      topBtn.hide();
+      //スクロールが300に達したらボタン表示
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

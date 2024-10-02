@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasK you design</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "ygh1tnu",
+        scriptTimeout: 3000,
+        async: true,
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div class="site__wrapper">
+    <!--ヘッダー-->
+
+    <header id="header">
+      <div class="header__contents">
+        <h1>
+          <a class="header__logo" href="./index.html">
+            <img src="./img/logo.png" alt="task logo">
+          </a>
+        </h1>
+
+        <div class="close-tab">
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!--コンテンツ-->
+
+    <section id="thanks">
+      <div class="section-title-area">
+        <img src="./img/title_back.png" alt="">
+        <h3 class="thanks-section__title">THANK YOU!</h3>
+      </div>
+      <div class="thanks-text__area">
+        <div class="thanks__text">
+          この度はお問い合わせいただきありがとうございます。<br>
+          お問い合わせ内容を確認の上、2~3日以内に折り返しご連絡いたします。<br>
+          心を込めて対応させていただきします。
+        </div>
+        <div class="contact__area-to-sns">
+          <a href="#"><img src="./img/insta_logo.png" alt="instagram logo"><span>follow me!</span></a>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+
+    <footer>
+      <div class="footer__wrapper">
+        <picture>
+          <source srcset="./img/footer-bg-sp.png" media="(max-width:800px)"><img src="./img/footer_back.png"
+            alt="フッター背景">
+        </picture>
+        <div class="footer__area">
+          <div class="footer__inner">
+            <a href="./index.html#">
+              <img src="./img/footer_logo.png" alt="TasK logo"></a>
+            <a href="#">
+              <img src="./img/insta_logo.png" alt="instagram logo"></a>
+          </div>
+          <div class="copyright">&copy; 2024 TasK</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
