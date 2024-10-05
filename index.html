@@ -43,6 +43,8 @@
       s.parentNode.insertBefore(tk, s);
     })(document);
   </script>
+
+  <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -52,7 +54,7 @@
     <header id="header">
       <div class="header__contents">
         <h1>
-          <a class="header__logo" href="">
+          <a class="header__logo" href="#">
             <img src="./img/logo.png" alt="task logo">
           </a>
         </h1>
@@ -67,13 +69,14 @@
 
         <nav class="header_nav">
           <span></span>
-          <ul>
+          <ul class="menu">
             <li><a href="#service">SERVICE</a></li>
             <li><a href="#top-works">WORKS</a></li>
             <li><a href="#top-about">ABOUT</a></li>
             <li><a href="#top-contact">CONTACT</a></li>
             <li>
-              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+              <a href="https://www.instagram.com/task_you_design/"><img src="./img/insta_logo.png"
+                  alt="instagram logo">follow
                 me!</a>
             </li>
           </ul>
@@ -118,7 +121,7 @@
     <section class="main__copy-sp">
       <h2>あなたのタスクを<br>お助けします</h2>
       <p>I will help you do your task<br>whenever you need it</p>
-      <div class="main__lead">
+      <div class="main__lead ">
         あなたのチカラになりたい。<br>
         今まで出会ったあなたの、<br>これから出会うあなたのチカラに。<br>
         悩み事はありませんか？<br>
@@ -162,7 +165,8 @@
             </div>
             <div class="service__text">
               <p>
-                WEBサイトやLPサイト、バナーなどのWEB周りのデザインを承ります。丁寧にヒアリングを行い、お客様の課題解決に向けたデザインの提案をしています。
+                <span class="sofia">WEB</span>サイトや<span class="sofia">LP</span>サイト、バナーなどの<span
+                  class="sofia">WEB</span>周りのデザインを承ります。丁寧にヒアリングを行い、お客様の課題解決に向けたデザインの提案をしています。
               </p>
             </div>
           </div>
@@ -178,7 +182,8 @@
             </div>
             <div class="service__text">
               <p>
-                HTML、CSS、JavaScriptを用いて動きのあるサイトを作ることができます。レスポンシブに対応したサイトの制作も可能です。
+                <span class="sofia">HTML</span>、<span class="sofia">CSS</span>、<span
+                  class="sofia">JavaScript</span>を用いて動きのあるサイトを作ることができます。レスポンシブに対応したサイトの制作も可能です。
               </p>
             </div>
           </div>
@@ -209,11 +214,12 @@
               <img class="service__subtitle-img" src="./img/web_img.png" alt="グラフィック制作をしている女の人のイラスト">
             </div>
             <div class="subtitle__area">
-              <h4 class="service__subtitle">web</h4>
+              <h4 class="service__subtitle slide_left">web</h4>
             </div>
           </div>
-          <div class="service__text">
-            <p>WEBサイトやLPサイト、バナーなどのWEB周りのデザインを承ります。丁寧にヒアリングを行い、お客様の課題解決に向けたデザインの提案をしています。</p>
+          <div class="service__text slide_left">
+            <p><span class="sofia">WEB</span>サイトや<span class="sofia">LP</span>サイト、バナーなどの<span
+                class="sofia">WEB</span>周りのデザインを承ります。丁寧にヒアリングを行い、お客様の課題解決に向けたデザインの提案をしています。</p>
           </div>
         </div>
         <div class="service-area__inner-sp">
@@ -227,7 +233,8 @@
             </div>
           </div>
           <div class="service__text">
-            <p>HTML、CSS、JavaScriptを用いて動きのあるサイトを作ることができます。レスポンシブに対応したサイトの制作も可能です。</p>
+            <p><span class="sofia">HTML</span>、<span class="sofia">CSS</span>、<span
+                class="sofia">JavaScript</span>を用いて動きのあるサイトを作ることができます。レスポンシブに対応したサイトの制作も可能です。</p>
           </div>
         </div>
       </div>
@@ -245,19 +252,27 @@
           <ul class="top-works-list">
             <li>
               <a href="./works.html#works01">
-                <img class="works-img" src="./img/works_img01.png" alt="美容室ホームページ">
+                <span class="slide">
+                  <img class="works-img slide_left" src="./img/works_img01.png" alt="美容室ホームページ">
+                </span>
                 <span class="works_sub">WEB</span><span class="works-list-title">美容室ホームページ</span>
               </a>
             </li>
             <li>
               <a href="./works.html#works04">
-                <img class="works-img" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                <span class="slide">
+                  <img class="works-img slide_left" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                </span>
                 <span class="works_sub">Graphic</span><span class="works-list-title">焼き鳥屋ポスター</span>
               </a>
             </li>
             <li>
               <a href="./works.html#works02">
-                <img class="works-img" src="./img/works_img02.png" alt="カフェホームページ">
+                <span>
+                  <span class="slide">
+                    <img class="works-img slide_left" src="./img/works_img02.png" alt="カフェホームページ">
+                  </span>
+                </span>
                 <span class="works_sub">WEB</span><span class="works-list-title">カフェホームページ</span>
               </a>
             </li>
@@ -289,7 +304,8 @@
               <div class="about__name">サイトウ　ユウコ</div>
             </div>
             <div class="top-about__text">
-              チラシ、パンフレット、ロゴ、名刺などのグラフィックデザイン、バナーやLP、ホームページなどのwebデザインを承っています。
+              チラシ、パンフレット、ロゴ、名刺などのグラフィックデザイン、バナーや<span class="sofia">LP</span>、ホームページなどの<span
+                class="sofia">web</span>デザインを承っています。
               お客様の課題の解決に向けて、まずは丁寧なヒアリングをいたします。ご不明な点やこんなことはできるのかなといった些細な疑問などなんでもご相談ください。<br>
               お客様と目指す方向を一緒に確認しながらデザインを作成いたします。
             </div>
@@ -316,14 +332,16 @@
         <img src="./img/title_back.png" alt="">
         <h3 class="section__title">CONTACT</h3>
       </div>
-      <div class="top-contact__area">
-        <div class="top-contact__btn">
-          <a href="./contact.html">お問い合わせはこちらから</a>
-        </div>
-        <div class="top-contact__text">
-          お仕事のご依頼やご相談、こんなことできますか？<br>
-          などお気軽にお問合せください。<br>
-          お問い合わせフォームまたはインスタのDMでも受け付けています。
+      <div class="text__area-wrapper-outer">
+        <div class="top-contact__area">
+          <div class="top-contact__btn">
+            <a href="./contact.html">お問い合わせはこちらから</a>
+          </div>
+          <div class="top-contact__text">
+            お仕事のご依頼やご相談、こんなことできますか？<br>
+            などお気軽にお問合せください。<br>
+            お問い合わせフォームまたはインスタの<span class="sofia">DM</span>でも受け付けています。
+          </div>
         </div>
       </div>
     </section>
@@ -338,9 +356,9 @@
         </picture>
         <div class="footer__area">
           <div class="footer__inner">
-            <a href="#home">
+            <a href="#">
               <img src="./img/footer_logo.png" alt="TasK logo"></a>
-            <a href="">
+            <a href="https://www.instagram.com/task_you_design/">
               <img src="./img/insta_logo.png" alt="instagram logo"></a>
           </div>
           <div class="copyright">&copy; 2024 TasK</div>
@@ -348,15 +366,328 @@
       </div>
     </footer>
   </div>
+
+  <!--roading-->
+
+  <div class="loading">
+    <img class="loading__bg" src="./img/loading_bg.png" alt="">
+    <div class="spinner">
+      <svg id="loading__text" data-name="loading__text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.61 292.44">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #fefdfb;
+              font-family: Brougham, Bold;
+              font-size: 14px;
+              font-weight: 100;
+            }
+          </style>
+        </defs>
+        <g id="img">
+          <text class="cls-1" transform="translate(286.49 154.54) rotate(95.35)">
+            <tspan x="0" y="0">I</tspan>
+          </text>
+          <text class="cls-1" transform="translate(285.7 163.01) rotate(99.02)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(284.36 171.37) rotate(102.7)">
+            <tspan x="0" y="0">w</tspan>
+          </text>
+          <text class="cls-1" transform="translate(282.49 179.67) rotate(106.39)">
+            <tspan x="0" y="0">i</tspan>
+          </text>
+          <text class="cls-1" transform="translate(280.09 187.82) rotate(110.08)">
+            <tspan x="0" y="0">l</tspan>
+          </text>
+          <text class="cls-1" transform="translate(277.17 195.81) rotate(113.75)">
+            <tspan x="0" y="0">l</tspan>
+          </text>
+          <text class="cls-1" transform="translate(273.74 203.58) rotate(117.4)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(269.83 211.12) rotate(121.03)">
+            <tspan x="0" y="0">h</tspan>
+          </text>
+          <text class="cls-1" transform="translate(265.45 218.4) rotate(124.64)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(260.63 225.37) rotate(128.23)">
+            <tspan x="0" y="0">l</tspan>
+          </text>
+          <text class="cls-1" transform="translate(255.36 232.06) rotate(131.8)">
+            <tspan x="0" y="0">p</tspan>
+          </text>
+          <text class="cls-1" transform="translate(249.7 238.38) rotate(135.35)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(243.66 244.35) rotate(138.89)">
+            <tspan x="0" y="0">y</tspan>
+          </text>
+          <text class="cls-1" transform="translate(237.26 249.92) rotate(142.42)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(230.52 255.11) rotate(145.94)">
+            <tspan x="0" y="0">u</tspan>
+          </text>
+          <text class="cls-1" transform="translate(223.49 259.86) rotate(149.46)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(216.18 264.17) rotate(152.97)">
+            <tspan x="0" y="0">d</tspan>
+          </text>
+          <text class="cls-1" transform="translate(208.62 268.02) rotate(156.49)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(200.82 271.41) rotate(160)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(192.84 274.31) rotate(163.51)">
+            <tspan x="0" y="0">y</tspan>
+          </text>
+          <text class="cls-1" transform="translate(184.69 276.72) rotate(167.01)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(176.44 278.62) rotate(170.49)">
+            <tspan x="0" y="0">u</tspan>
+          </text>
+          <text class="cls-1" transform="translate(168.06 280.02) rotate(173.96)">
+            <tspan x="0" y="0">r</tspan>
+          </text>
+          <text class="cls-1" transform="translate(159.61 280.91) rotate(177.4)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(151.13 281.3) rotate(-179.09)">
+            <tspan x="0" y="0">t</tspan>
+          </text>
+          <text class="cls-1" transform="translate(142.65 281.17) rotate(-175.78)">
+            <tspan x="0" y="0">a</tspan>
+          </text>
+          <text class="cls-1" transform="translate(134.18 280.55) rotate(-172.33)">
+            <tspan x="0" y="0">s</tspan>
+          </text>
+          <text class="cls-1" transform="translate(125.77 279.41) rotate(-168.85)">
+            <tspan x="0" y="0">k</tspan>
+          </text>
+          <text class="cls-1" transform="translate(117.42 277.76) rotate(-165.35)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(109.22 275.62) rotate(-161.85)">
+            <tspan x="0" y="0">w</tspan>
+          </text>
+          <text class="cls-1" transform="translate(101.14 272.96) rotate(-158.33)">
+            <tspan x="0" y="0">h</tspan>
+          </text>
+          <text class="cls-1" transform="translate(93.26 269.83) rotate(-154.82)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(85.58 266.22) rotate(-151.31)">
+            <tspan x="0" y="0">n</tspan>
+          </text>
+          <text class="cls-1" transform="translate(78.12 262.14) rotate(-147.79)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(70.94 257.61) rotate(-144.27)">
+            <tspan x="0" y="0">v</tspan>
+          </text>
+          <text class="cls-1" transform="translate(64.04 252.64) rotate(-140.74)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(57.46 247.26) rotate(-137.21)">
+            <tspan x="0" y="0">r</tspan>
+          </text>
+          <text class="cls-1" transform="translate(51.24 241.49) rotate(-133.66)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(45.38 235.35) rotate(-130.11)">
+            <tspan x="0" y="0">y</tspan>
+          </text>
+          <text class="cls-1" transform="translate(39.92 228.86) rotate(-126.53)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(34.87 222.04) rotate(-122.94)">
+            <tspan x="0" y="0">u</tspan>
+          </text>
+          <text class="cls-1" transform="translate(30.24 214.9) rotate(-119.31)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(26.08 207.49) rotate(-115.67)">
+            <tspan x="0" y="0">n</tspan>
+          </text>
+          <text class="cls-1" transform="translate(22.41 199.84) rotate(-112.01)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(19.23 191.96) rotate(-108.33)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(16.56 183.89) rotate(-104.65)">
+            <tspan x="0" y="0">d</tspan>
+          </text>
+          <text class="cls-1" transform="translate(14.41 175.65) rotate(-100.95)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(12.8 167.32) rotate(-97.28)">
+            <tspan x="0" y="0">i</tspan>
+          </text>
+          <text class="cls-1" transform="translate(11.73 158.89) rotate(-93.62)">
+            <tspan x="0" y="0">t</tspan>
+          </text>
+          <text class="cls-1" transform="translate(11.27 150.5) rotate(-90.95)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(11.2 141.92) rotate(-86.38)">
+            <tspan x="0" y="0">I</tspan>
+          </text>
+          <text class="cls-1" transform="translate(11.74 133.44) rotate(-82.72)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(12.81 125.03) rotate(-79.05)">
+            <tspan x="0" y="0">w</tspan>
+          </text>
+          <text class="cls-1" transform="translate(14.44 116.67) rotate(-75.35)">
+            <tspan x="0" y="0">i</tspan>
+          </text>
+          <text class="cls-1" transform="translate(16.59 108.45) rotate(-71.67)">
+            <tspan x="0" y="0">l</tspan>
+          </text>
+          <text class="cls-1" transform="translate(19.26 100.38) rotate(-67.99)">
+            <tspan x="0" y="0">l</tspan>
+          </text>
+          <text class="cls-1" transform="translate(22.45 92.52) rotate(-64.33)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(26.13 84.86) rotate(-60.69)">
+            <tspan x="0" y="0">h</tspan>
+          </text>
+          <text class="cls-1" transform="translate(30.3 77.44) rotate(-57.06)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(34.92 70.32) rotate(-53.47)">
+            <tspan x="0" y="0">l</tspan>
+          </text>
+          <text class="cls-1" transform="translate(39.97 63.51) rotate(-49.89)">
+            <tspan x="0" y="0">p</tspan>
+          </text>
+          <text class="cls-1" transform="translate(45.43 57.02) rotate(-46.34)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(51.3 50.88) rotate(-42.79)">
+            <tspan x="0" y="0">y</tspan>
+          </text>
+          <text class="cls-1" transform="translate(57.54 45.11) rotate(-39.26)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(64.12 39.73) rotate(-35.73)">
+            <tspan x="0" y="0">u</tspan>
+          </text>
+          <text class="cls-1" transform="translate(71.02 34.78) rotate(-32.21)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(78.21 30.25) rotate(-28.69)">
+            <tspan x="0" y="0">d</tspan>
+          </text>
+          <text class="cls-1" transform="translate(85.66 26.18) rotate(-25.18)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(93.33 22.57) rotate(-21.67)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(101.24 19.43) rotate(-18.15)">
+            <tspan x="0" y="0">y</tspan>
+          </text>
+          <text class="cls-1" transform="translate(109.29 16.8) rotate(-14.65)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(117.52 14.65) rotate(-11.15)">
+            <tspan x="0" y="0">u</tspan>
+          </text>
+          <text class="cls-1" transform="translate(125.85 13.01) rotate(-7.67)">
+            <tspan x="0" y="0">r</tspan>
+          </text>
+          <text class="cls-1" transform="translate(134.27 11.88) rotate(-4.22)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(142.73 11.26) rotate(-.91)">
+            <tspan x="0" y="0">t</tspan>
+          </text>
+          <text class="cls-1" transform="translate(151.22 11.14) rotate(2.6)">
+            <tspan x="0" y="0">a</tspan>
+          </text>
+          <text class="cls-1" transform="translate(159.7 11.53) rotate(6.04)">
+            <tspan x="0" y="0">s</tspan>
+          </text>
+          <text class="cls-1" transform="translate(168.15 12.42) rotate(9.51)">
+            <tspan x="0" y="0">k</tspan>
+          </text>
+          <text class="cls-1" transform="translate(176.51 13.82) rotate(12.99)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(184.79 15.74) rotate(16.49)">
+            <tspan x="0" y="0">w</tspan>
+          </text>
+          <text class="cls-1" transform="translate(192.92 18.15) rotate(20)">
+            <tspan x="0" y="0">h</tspan>
+          </text>
+          <text class="cls-1" transform="translate(200.91 21.06) rotate(23.51)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(208.69 24.45) rotate(27.03)">
+            <tspan x="0" y="0">n</tspan>
+          </text>
+          <text class="cls-1" transform="translate(216.25 28.31) rotate(30.54)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(223.56 32.62) rotate(34.06)">
+            <tspan x="0" y="0">v</tspan>
+          </text>
+          <text class="cls-1" transform="translate(230.6 37.39) rotate(37.58)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(237.33 42.56) rotate(41.11)">
+            <tspan x="0" y="0">r</tspan>
+          </text>
+          <text class="cls-1" transform="translate(243.72 48.15) rotate(44.65)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(249.76 54.11) rotate(48.2)">
+            <tspan x="0" y="0">y</tspan>
+          </text>
+          <text class="cls-1" transform="translate(255.43 60.46) rotate(51.77)">
+            <tspan x="0" y="0">o</tspan>
+          </text>
+          <text class="cls-1" transform="translate(260.68 67.13) rotate(55.36)">
+            <tspan x="0" y="0">u</tspan>
+          </text>
+          <text class="cls-1" transform="translate(265.5 74.12) rotate(58.97)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(269.88 81.39) rotate(62.6)">
+            <tspan x="0" y="0">n</tspan>
+          </text>
+          <text class="cls-1" transform="translate(273.78 88.93) rotate(66.25)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(277.21 96.72) rotate(69.92)">
+            <tspan x="0" y="0">e</tspan>
+          </text>
+          <text class="cls-1" transform="translate(280.12 104.7) rotate(73.61)">
+            <tspan x="0" y="0">d</tspan>
+          </text>
+          <text class="cls-1" transform="translate(282.52 112.86) rotate(77.3)">
+            <tspan x="0" y="0"> </tspan>
+          </text>
+          <text class="cls-1" transform="translate(284.38 121.13) rotate(80.98)">
+            <tspan x="0" y="0">i</tspan>
+          </text>
+          <text class="cls-1" transform="translate(285.71 129.53) rotate(84.65)">
+            <tspan x="0" y="0">t</tspan>
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
   <script>
-    $(function () {
-      $(".hamburger").click(function () {
-        $(".hamburger").toggleClass("open");
-        $(".header_nav").fadeToggle();
-      });
-    });
-  </script>
-  <script>
+
+
     $(function () {
       var topBtn = $('#header');
       topBtn.hide();
@@ -369,30 +700,23 @@
         }
       });
     });
-  </script>
-  <script>
+
     $(function () {
-      $(window).scroll(function () {
-        var scroll = $('.scroll');
-        if ($(this).scrollTop() > 100) {
-          scroll.fadeOut();
-        } else {
-          scroll.fadeIn();
-        }
-      })
-    });
-  </script>
-  <script>
-    $(function () {
-      var topBtn = $('.back-to-top');
-      topBtn.hide();
-      //スクロールが300に達したらボタン表示
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          topBtn.fadeIn();
-        } else {
-          topBtn.fadeOut();
-        }
+      function end_loading() {
+        // フェードアウトする時間
+        $('.loading').fadeOut(2000);
+      }
+      $(window).on('load', function () {
+        setTimeout(function () {
+          $('.spinner').fadeIn(1000);
+        }, 500); //0.5秒後にロゴをフェードイン!
+        setTimeout(function () {
+          $('.loading').fadeOut(500);
+        }, 3000);
+        setTimeout(function () {
+          end_loading();
+          // ローディング画面を表示する時間
+        }, 3000)
       });
     });
   </script>

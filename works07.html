@@ -11,12 +11,6 @@
   <link rel="stylesheet" href="./colorbox/colorbox.css">
   <link rel="stylesheet" href="./css/style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"
-    integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./colorbox/jquery.colorbox-ja.js"></script>
-
   <script>
     (function (d) {
       var config = {
@@ -48,6 +42,14 @@
       s.parentNode.insertBefore(tk, s);
     })(document);
   </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"
+    integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./colorbox/jquery.colorbox-ja.js"></script>
+  <script src="./js/colorbox.js"></script>
+  <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -78,7 +80,8 @@
             <li><a href="./index.html#top-about">ABOUT</a></li>
             <li><a href="./index.html#top-contact">CONTACT</a></li>
             <li>
-              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+              <a href="https://www.instagram.com/task_you_design/"><img src="./img/insta_logo.png"
+                  alt="instagram logo">follow
                 me!</a>
             </li>
           </ul>
@@ -108,31 +111,33 @@
           <img src="./img/hover_hamburger.jpg" alt="ハンバーガーバナーモックアップ">
         </div>
         <div class="works-detail__area">
-          <div class="text__area-wrapper">
-            <div class="detail-title__area">
-              <p>
-                <span class="works_sub">WEB</span>ハンバーガーショップバナー（架空）
-              </p>
-            </div>
-            <div class="detail__table">
-              <dl>
-                <dt>担当範囲</dt>
-                <dd>デザイン</dd>
+          <div class="text__area-wrapper-outer">
+            <div class="text__area-wrapper">
+              <div class="detail-title__area">
+                <p>
+                  <span class="works_sub">WEB</span>ハンバーガーショップバナー（架空）
+                </p>
+              </div>
+              <div class="detail__table">
+                <dl>
+                  <dt>担当範囲</dt>
+                  <dd>デザイン</dd>
 
-                <dt>制作期間</dt>
-                <dd>１週間</dd>
+                  <dt>制作期間</dt>
+                  <dd><span class="sofia">1</span>週間</dd>
 
-                <dt>使用ツール</dt>
-                <dd>Illustrator／Photohop</dd>
+                  <dt>使用ツール</dt>
+                  <dd><span class="sofia">Illustrator／Photohop</span></dd>
 
-                <dt>目的</dt>
-                <dd>新商品の販売促進</dd>
-              </dl>
-            </div>
-            <div class="detail__text">
-              東京のおすすめスポットを紹介するサイトのバナーを制作しました。<br>
-              配色は写真の夜空や空の色に合わせて行い、素材選びも全体の写真のトンマナを揃えるように、彩度の高い写真を選ぶなど意識して選定しました。<br>
-              写真を斜めに配置することでパッと目を引くデザインになるように工夫しました。
+                  <dt>目的</dt>
+                  <dd>新商品の販売促進</dd>
+                </dl>
+              </div>
+              <div class="detail__text">
+                東京のおすすめスポットを紹介するサイトのバナーを制作しました。<br>
+                配色は写真の夜空や空の色に合わせて行い、素材選びも全体の写真のトンマナを揃えるように、彩度の高い写真を選ぶなど意識して選定しました。<br>
+                写真を斜めに配置することでパッと目を引くデザインになるように工夫しました。
+              </div>
             </div>
           </div>
         </div>
@@ -188,9 +193,9 @@
         </picture>
         <div class="footer__area">
           <div class="footer__inner">
-            <a href="#home">
+            <a href="./index.html">
               <img src="./img/footer_logo.png" alt="TasK logo"></a>
-            <a href="#">
+            <a href="https://www.instagram.com/task_you_design/">
               <img src="./img/insta_logo.png" alt="instagram logo"></a>
           </div>
           <div class="copyright">&COPY; 2024 TasK</div>
@@ -198,50 +203,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    $(function () {
-      $(".hamburger").click(function () {
-        $(".hamburger").toggleClass("open");
-        $(".header_nav").fadeToggle();
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".iframe").colorbox({
-        rel: "colorbox-groupe1",
-        iframe: true,
-        width: "80%",
-        height: "80%",
-      });
-    });
-  </script>
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        var scroll = $('.scroll');
-        if ($(this).scrollTop() > 100) {
-          scroll.fadeOut();
-        } else {
-          scroll.fadeIn();
-        }
-      })
-    });
-  </script>
-  <script>
-    $(function () {
-      var topBtn = $('.back-to-top');
-      topBtn.hide();
-      //スクロールが300に達したらボタン表示
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          topBtn.fadeIn();
-        } else {
-          topBtn.fadeOut();
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>

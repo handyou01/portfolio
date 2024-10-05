@@ -43,6 +43,9 @@
       s.parentNode.insertBefore(tk, s);
     })(document);
   </script>
+
+  <script src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -73,7 +76,8 @@
             <li><a href="./index.html#top-about">ABOUT</a></li>
             <li><a href="./index.html#top-contact">CONTACT</a></li>
             <li>
-              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+              <a href="https://www.instagram.com/task_you_design/"><img src="./img/insta_logo.png"
+                  alt="instagram logo">follow
                 me!</a>
             </li>
           </ul>
@@ -91,11 +95,11 @@
     </div>
 
     <!--コンテンツ-->
-    <!--
-        <section class="hover__area">
 
-        </section>
--->
+    <section class="hover__area">
+
+    </section>
+
     <section id="works">
       <div id="load"></div>
       <div class="works__area">
@@ -108,49 +112,65 @@
             <ul class="works-list">
               <li>
                 <a href="./works01.html">
-                  <img class="works-img" id="works01" src="./img/works_img01.png" alt="美容室ホームページ">
+                  <span class="slide">
+                    <img class="works-img slide_left" id="works01" src="./img/works_img01.png" alt="美容室ホームページ">
+                  </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">美容室ホームページ</span>
                 </a>
               </li>
               <li>
                 <a href="./works02.html">
-                  <img class="works-img" id="works02" src="./img/works_img02.png" alt="カフェホームページ">
+                  <span class="slide">
+                    <img class="works-img slide_left" id="works02" src="./img/works_img02.png" alt="カフェホームページ">
+                  </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">カフェホームページ</span>
                 </a>
               </li>
               <li>
                 <a href="./works03.html">
-                  <img class="works-img" src="./img/works_img03.png" alt="カフェパンフレット">
+                  <span class="slide">
+                    <img class="works-img slide_left" src="./img/works_img03.png" alt="カフェパンフレット">
+                  </span>
                   <span class="works_sub">Graphic</span><span class="works-list-title">カフェパンフレット</span>
                 </a>
               </li>
               <li>
                 <a href="./works04.html">
-                  <img class="works-img" id="works04" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                  <span class="slide">
+                    <img class="works-img slide_left" id="works04" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                  </span>
                   <span class="works_sub">Graphic</span><span class="works-list-title">焼き鳥屋ポスター</span>
                 </a>
               </li>
               <li>
                 <a href="./works05.html">
-                  <img class="works-img" src="./img/works_img05.png" alt="みどり牛乳キャンペーンロゴ">
+                  <span class="slide">
+                    <img class="works-img slide_left" src="./img/works_img05.png" alt="みどり牛乳キャンペーンロゴ">
+                  </span>
                   <span class="works_sub">Graphic</span><span class="works-list-title">みどり牛乳キャンペーンロゴ</span>
                 </a>
               </li>
               <li>
                 <a href="./works06.html">
-                  <img class="works-img" src="./img/works_img06.png" alt="観光サイトバナー">
+                  <span class="slide">
+                    <img class="works-img slide_left" src="./img/works_img06.png" alt="観光サイトバナー">
+                  </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">観光サイトバナー</span>
                 </a>
               </li>
               <li>
                 <a href="./works07.html">
-                  <img class="works-img" src="./img/works_img07.png" alt="ハンバーガーショップバナー">
+                  <span class="slide">
+                    <img class="works-img slide_left" src="./img/works_img07.png" alt="ハンバーガーショップバナー">
+                  </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">ハンバーガーショップバナー</span>
                 </a>
               </li>
               <li>
                 <a href="./works08.html">
-                  <img class="works-img" src="./img/works_img08.png" alt="ポートフォリオサイト">
+                  <span class="slide">
+                    <img class="works-img slide_left" src="./img/works_img08.png" alt="ポートフォリオサイト">
+                  </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">ポートフォリオサイト</span>
                 </a>
               </li>
@@ -158,6 +178,7 @@
           </div>
         </div>
       </div>
+      <div id="load"></div>
     </section>
 
     <!--footer-->
@@ -170,9 +191,9 @@
         </picture>
         <div class="footer__area">
           <div class="footer__inner">
-            <a href="./index.html#">
+            <a href="./index.html">
               <img src="./img/footer_logo.png" alt="TasK logo"></a>
-            <a href="#">
+            <a href="https://www.instagram.com/task_you_design/">
               <img src="./img/insta_logo.png" alt="instagram logo"></a>
           </div>
           <div class="copyright">&COPY; 2024 TasK</div>
@@ -180,40 +201,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    $(function () {
-      $(".hamburger").click(function () {
-        $(".hamburger").toggleClass("open");
-        $(".header_nav").fadeToggle();
-      });
-    });
-  </script>
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        var scroll = $('.scroll');
-        if ($(this).scrollTop() > 100) {
-          scroll.fadeOut();
-        } else {
-          scroll.fadeIn();
-        }
-      })
-    });
-  </script>
-  <script>
-    $(function () {
-      var topBtn = $('.back-to-top');
-      topBtn.hide();
-      //スクロールが300に達したらボタン表示
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          topBtn.fadeIn();
-        } else {
-          topBtn.fadeOut();
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>

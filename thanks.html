@@ -58,7 +58,7 @@
         </h1>
 
         <div class="close-tab">
-          <span></span>
+          <a class="close-tab" href="./index.html#"><span></span></a>
         </div>
       </div>
     </header>
@@ -73,11 +73,12 @@
       <div class="thanks-text__area">
         <div class="thanks__text">
           この度はお問い合わせいただきありがとうございます。<br>
-          お問い合わせ内容を確認の上、2~3日以内に折り返しご連絡いたします。<br>
+          お問い合わせ内容を確認の上、<span class="sofia-wh">2</span>~<span class="sofia-wh">3</span>日以内に折り返しご連絡いたします。<br>
           心を込めて対応させていただきします。
         </div>
         <div class="contact__area-to-sns">
-          <a href="#"><img src="./img/insta_logo.png" alt="instagram logo"><span>follow me!</span></a>
+          <a href="https://www.instagram.com/task_you_design/"><img src="./img/insta_logo.png"
+              alt="instagram logo"><span>follow me!</span></a>
         </div>
       </div>
     </section>
@@ -91,9 +92,9 @@
         </picture>
         <div class="footer__area">
           <div class="footer__inner">
-            <a href="./index.html#">
+            <a href="./index.html">
               <img src="./img/footer_logo.png" alt="TasK logo"></a>
-            <a href="#">
+            <a href="https://www.instagram.com/task_you_design/">
               <img src="./img/insta_logo.png" alt="instagram logo"></a>
           </div>
           <div class="copyright">&copy; 2024 TasK</div>
@@ -101,6 +102,20 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    window.addEventListener('popstate', function (e) {
+
+      console.log('ボタンがクリックされました');
+
+    });
+    window.addEventListener("popstate", function (e) {
+
+      history.pushState(null, null, null);
+      return;
+
+    });
+  </script>
 </body>
 
 </html>

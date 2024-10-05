@@ -44,6 +44,8 @@
     })(document);
   </script>
 
+  <script src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -73,7 +75,8 @@
             <li><a href="./index.html#top-about">ABOUT</a></li>
             <li><a href="./index.html#top-contact">CONTACT</a></li>
             <li>
-              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+              <a href="https://www.instagram.com/task_you_design/"><img src="./img/insta_logo.png"
+                  alt="instagram logo">follow
                 me!</a>
             </li>
           </ul>
@@ -104,17 +107,16 @@
         <div class="contact__text">
           お仕事のご依頼やご相談、こんなことできますか？<br>
           などお気軽にお問合せください。<br>
-          お問い合わせフォームまたはインスタのDMでも受け付けています。<br>
-          内容を確認の上、2~3日以内に折り返しご連絡いたします。
+          お問い合わせフォームまたはインスタの<span class="sofia-wh">DM</span>でも受け付けています。<br>
+          内容を確認の上、<span class="sofia-wh">2</span>~<span class="sofia-wh">3</span>日以内に折り返しご連絡いたします。
         </div>
         <div class="contact__area-to-sns">
           <a href="#"><img src="./img/insta_logo.png" alt="instagram logo"><span>follow me!</span></a>
         </div>
       </div>
       <div class="contact-form">
-        <form class="form__area"
-          action="action=https://docs.google.com/forms/u/0/d/e/1FAIpQLSeOyU6ZtPVFNkP2QgFPBopdwfcmg9n_70p_EHmDRsuC-d-o9g/formResponse"
-          method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+        <form class="form__area" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeOyU6ZtPVFNkP2QgFPBopdwfcmg9n_70p_EHmDRsuC-d-o9g/formResponse
+          " method="POST" target="hidden_iframe" onsubmit="submitted=true;">
           <label for="name">お名前<span class="required-label">必須</span></label>
           <input name="entry.1545808904" class="input__area" id="name" placeholder="例）山田　太郎" type="text" required>
 
@@ -125,7 +127,7 @@
 
           <div class="form__area">
             <label for="email">メールアドレス<span class="required-label">必須</span></label>
-            <input type="email" name="entry.277451759" class="input__area email__area" id="email"
+            <input type="email" name="entry.1457970464" class="input__area email__area" id="email"
               placeholder="例）yamada.t@task.com" required>
           </div>
 
@@ -156,9 +158,9 @@
         </picture>
         <div class="footer__area">
           <div class="footer__inner">
-            <a href="./index.html#">
+            <a href="./index.html">
               <img src="./img/footer_logo.png" alt="TasK logo"></a>
-            <a href="#">
+            <a href="https://www.instagram.com/task_you_design/">
               <img src="./img/insta_logo.png" alt="instagram logo"></a>
           </div>
           <div class="copyright">&COPY; 2024 TasK</div>
@@ -166,42 +168,8 @@
       </div>
     </footer>
   </div>
-  <script>
-    $(function () {
-      $(".hamburger").click(function () {
-        $(".hamburger").toggleClass("open");
-        $(".header_nav").fadeToggle();
-      });
-    });
-  </script>
   <script type="text/javascript">
     let submitted = false;
-  </script>
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        var scroll = $('.scroll');
-        if ($(this).scrollTop() > 100) {
-          scroll.fadeOut();
-        } else {
-          scroll.fadeIn();
-        }
-      })
-    });
-  </script>
-  <script>
-    $(function () {
-      var topBtn = $('.back-to-top');
-      topBtn.hide();
-      //スクロールが300に達したらボタン表示
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          topBtn.fadeIn();
-        } else {
-          topBtn.fadeOut();
-        }
-      });
-    });
   </script>
   <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
     onload="if(submitted){window.location='./thanks.html';}"></iframe>

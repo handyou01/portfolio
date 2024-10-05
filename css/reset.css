@@ -22,13 +22,14 @@ span {
     margin: 0;
     padding: 0;
     color: #3F3939;
-    font-family: "fot-tsukubrdgothic-std", sans-serif, "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    font-family: "fot-tsukubrdgothic-std", sans-serif,"A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
     font-size: 14px;
     font-feature-settings: "palt";
     box-sizing: border-box;
 }
+
 a {
     /*下線を消す*/
     text-decoration: none;

@@ -43,6 +43,9 @@
       s.parentNode.insertBefore(tk, s);
     })(document);
   </script>
+
+  <script src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -73,7 +76,8 @@
             <li><a href="./index.html#top-about">ABOUT</a></li>
             <li><a href="./index.html#top-contact">CONTACT</a></li>
             <li>
-              <a href="#"><img src="./img/insta_logo.png" alt="instagram logo">follow
+              <a href="https://www.instagram.com/task_you_design/"><img src="./img/insta_logo.png"
+                  alt="instagram logo">follow
                 me!</a>
             </li>
           </ul>
@@ -114,10 +118,11 @@
               <div class="about__contents-name">
                 <span>サイトウ　ユウコ</span>
               </div>
-              1981年秋田県生まれ。海のそばで18年間過ごしました。<br>
+              <span class="sofia">1981</span>年秋田県生まれ。海のそばで<span class="sofia">18</span>年間過ごしました。<br>
               秋田、岐阜、神奈川と移り住み、現在は千葉県在住です。<br>
               小さいころからモノづくりや手先を動かすことが好きで、自分の手で何かを作り出す仕事や職人と呼ばれる人にずっと憧れを抱いていました。<br>
-              15年務めていた動物関連の会社を辞めたことをきっかけに、自分でデザインを作り上げるということに興味を持ち、40歳を過ぎてからですが職業訓練校やスクールにてwebデザイン、グラフィックデザインを学び始めました。<br>
+              15年務めていた動物関連の会社を辞めたことをきっかけに、自分でデザインを作り上げるということに興味を持ち、<span
+                class="sofia">40</span>歳を過ぎてからですが職業訓練校やスクールにて<span class="sofia">web</span>デザイン、グラフィックデザインを学び始めました。<br>
               微力ではありますが、人と人とのつながりを大切に、お客様とお客様の課題に丁寧に向き合って、多くの方のチカラになれるよう努力していきたいと考えています。
             </div>
           </div>
@@ -131,7 +136,7 @@
             <div class="about__task-text">
               <div class="about__prev-text">
                 コンセプトは<br>
-                I will help you do your task whenever you need it<br>
+                <span class="sofia">I will help you do your task whenever you need it</span><br>
                 ― あなたのタスクをお助けしますー
               </div>
               <div class="about__text">
@@ -158,7 +163,8 @@
             </div>
             <div class="about__logo-text">
               <div class="about__text">
-                ロゴマークはタスクを「＋9（たすく）」と読み変えて、数の多い様子を表す「9」と多くの可能性を秘めた「＋」をモチーフに作成しました。
+                ロゴマークはタスクを「＋<sapn class="sofia">9</sapn>（たすく）」と読み変えて、数の多い様子を表す「<span
+                  class="sofia">9</span>」と多くの可能性を秘めた「＋」をモチーフに作成しました。
                 円は人との和を表し、たくさんの人との出会い・繋がりがありますように、という想いを込めています。また、お客様に寄り添っている様子や手と鉛筆が机に向かってデザインをしている様子をイメージしました。
                 たくさんの人との出会いから多くのアイデアが生まれ、そのアイデアでたくさんの人の力になりたいという決意の表れでもあります。
               </div>
@@ -176,9 +182,9 @@
         </picture>
         <div class="footer__area">
           <div class="footer__inner">
-            <a href="./index.html#">
+            <a href="./index.html">
               <img src="./img/footer_logo.png" alt="TasK logo"></a>
-            <a href="">
+            <a href="https://www.instagram.com/task_you_design/">
               <img src="./img/insta_logo.png" alt="instagram logo"></a>
           </div>
           <div class="copyright">&COPY; 2024 TasK</div>
@@ -186,40 +192,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    $(function () {
-      $(".hamburger").click(function () {
-        $(".hamburger").toggleClass("open");
-        $(".header_nav").fadeToggle();
-      });
-    });
-  </script>
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        var scroll = $('.scroll');
-        if ($(this).scrollTop() > 100) {
-          scroll.fadeOut();
-        } else {
-          scroll.fadeIn();
-        }
-      })
-    });
-  </script>
-  <script>
-    $(function () {
-      var topBtn = $('.back-to-top');
-      topBtn.hide();
-      //スクロールが300に達したらボタン表示
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          topBtn.fadeIn();
-        } else {
-          topBtn.fadeOut();
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>
