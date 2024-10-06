@@ -7,6 +7,7 @@
   <title>TasK you design</title>
 
   <link rel="stylesheet" href="./css/reset.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/style.css">
 
@@ -110,66 +111,66 @@
           </div>
           <div class="works-img__area">
             <ul class="works-list">
-              <li>
+              <li data-aos="fade-up">
                 <a href="./works01.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" id="works01" src="./img/works_img01.png" alt="美容室ホームページ">
+                  <span class="slide_right">
+                    <img class="works-img" id="works01" src="./img/works_img01.png" alt="美容室ホームページ">
                   </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">美容室ホームページ</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="200">
                 <a href="./works02.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" id="works02" src="./img/works_img02.png" alt="カフェホームページ">
+                  <span class="slide_right">
+                    <img class="works-img" id="works02" src="./img/works_img02.png" alt="カフェホームページ">
                   </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">カフェホームページ</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="300">
                 <a href="./works03.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" src="./img/works_img03.png" alt="カフェパンフレット">
+                  <span class="slide_right">
+                    <img class="works-img" src="./img/works_img03.png" alt="カフェパンフレット">
                   </span>
                   <span class="works_sub">Graphic</span><span class="works-list-title">カフェパンフレット</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="400">
                 <a href="./works04.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" id="works04" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                  <span class="slide_right">
+                    <img class="works-img" id="works04" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
                   </span>
                   <span class="works_sub">Graphic</span><span class="works-list-title">焼き鳥屋ポスター</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="500">
                 <a href="./works05.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" src="./img/works_img05.png" alt="みどり牛乳キャンペーンロゴ">
+                  <span class="slide_right">
+                    <img class="works-img" src="./img/works_img05.png" alt="みどり牛乳キャンペーンロゴ">
                   </span>
                   <span class="works_sub">Graphic</span><span class="works-list-title">みどり牛乳キャンペーンロゴ</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="600">
                 <a href="./works06.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" src="./img/works_img06.png" alt="観光サイトバナー">
+                  <span class="slide_right">
+                    <img class="works-img" src="./img/works_img06.png" alt="観光サイトバナー">
                   </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">観光サイトバナー</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="700">
                 <a href="./works07.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" src="./img/works_img07.png" alt="ハンバーガーショップバナー">
+                  <span class="slide_right">
+                    <img class="works-img" src="./img/works_img07.png" alt="ハンバーガーショップバナー">
                   </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">ハンバーガーショップバナー</span>
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="800">
                 <a href="./works08.html">
-                  <span class="slide">
-                    <img class="works-img slide_left" src="./img/works_img08.png" alt="ポートフォリオサイト">
+                  <span class="slide_right">
+                    <img class="works-img" src="./img/works_img08.png" alt="ポートフォリオサイト">
                   </span>
                   <span class="works_sub">WEB</span><span class="works-list-title">ポートフォリオサイト</span>
                 </a>
@@ -201,6 +202,16 @@
       </div>
     </footer>
   </div>
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1200,
+      easing: 'ease-out-cubic',
+      offset: 200,
+    });
+  </script>
 </body>
 
 </html>

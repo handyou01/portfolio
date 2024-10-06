@@ -42,36 +42,3 @@ $(window).scroll(function () {
 });
 });
 
-//works
-
-$(function () {
-    // aimation呼び出し
-    if ($('.slide_left').length) {
-        scrollAnimation();
-    }
-
-    // aimation関数
-    function scrollAnimation() {
-        $(window).scroll(function () {
-            $(".slide_left").each(function () {
-                let position = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-
-                if (scroll > position - windowHeight + 200) {
-                    $(this).addClass('is-active');
-                }
-            });
-            $(".fade-in").each(function () {
-                let position = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-
-                if (scroll > position - windowHeight + 200) {
-                    $(this).addClass('is-active');
-                }
-            });
-        });
-    }
-    $(window).trigger('scroll');
-});
