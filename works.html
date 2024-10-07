@@ -97,12 +97,7 @@
 
     <!--コンテンツ-->
 
-    <section class="hover__area">
-
-    </section>
-
     <section id="works">
-      <div id="load"></div>
       <div class="works__area">
         <div id="fix__area">
           <div class="section-title-area">
@@ -113,74 +108,78 @@
             <ul class="works-list">
               <li data-aos="fade-up">
                 <a href="./works01.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/salon_mocup.jpg">
                     <img class="works-img" id="works01" src="./img/works_img01.png" alt="美容室ホームページ">
+                    <span class="works_sub">WEB</span><span class="works-list-title">美容室ホームページ</span>
                   </span>
-                  <span class="works_sub">WEB</span><span class="works-list-title">美容室ホームページ</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="200">
                 <a href="./works02.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/cafe_site_mocup.jpg">
                     <img class="works-img" id="works02" src="./img/works_img02.png" alt="カフェホームページ">
+                    <span class="works_sub">WEB</span><span class="works-list-title">カフェホームページ</span>
                   </span>
-                  <span class="works_sub">WEB</span><span class="works-list-title">カフェホームページ</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="300">
                 <a href="./works03.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/brandbook_mocup.jpg">
                     <img class="works-img" src="./img/works_img03.png" alt="カフェパンフレット">
+                    <span class="works_sub">Graphic</span><span class="works-list-title">カフェパンフレット</span>
                   </span>
-                  <span class="works_sub">Graphic</span><span class="works-list-title">カフェパンフレット</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="400">
                 <a href="./works04.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/yakitori_mocup.jpg">
                     <img class="works-img" id="works04" src="./img/works_img04.png" alt="焼き鳥屋ポスター">
+                    <span class="works_sub">Graphic</span><span class="works-list-title">焼き鳥屋ポスター</span>
                   </span>
-                  <span class="works_sub">Graphic</span><span class="works-list-title">焼き鳥屋ポスター</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="500">
                 <a href="./works05.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/midori_mocup.jpg">
                     <img class="works-img" src="./img/works_img05.png" alt="みどり牛乳キャンペーンロゴ">
+                    <span class="works_sub">Graphic</span><span class="works-list-title">みどり牛乳キャンペーンロゴ</span>
                   </span>
-                  <span class="works_sub">Graphic</span><span class="works-list-title">みどり牛乳キャンペーンロゴ</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="600">
                 <a href="./works06.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/tokyo_mocup.jpg">
                     <img class="works-img" src="./img/works_img06.png" alt="観光サイトバナー">
+                    <span class="works_sub">WEB</span><span class="works-list-title">観光サイトバナー</span>
                   </span>
-                  <span class="works_sub">WEB</span><span class="works-list-title">観光サイトバナー</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="700">
                 <a href="./works07.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/hamburger_mocup.jpg">
                     <img class="works-img" src="./img/works_img07.png" alt="ハンバーガーショップバナー">
+                    <span class="works_sub">WEB</span><span class="works-list-title">ハンバーガーショップバナー</span>
                   </span>
-                  <span class="works_sub">WEB</span><span class="works-list-title">ハンバーガーショップバナー</span>
                 </a>
               </li>
               <li data-aos="fade-up" data-aos-delay="800">
                 <a href="./works08.html">
-                  <span class="slide_right">
+                  <span class="works-img-hover" data-img="./img/portfolio_mocup.jpg">
                     <img class="works-img" src="./img/works_img08.png" alt="ポートフォリオサイト">
+                    <span class="works_sub">WEB</span><span class="works-list-title">ポートフォリオサイト</span>
                   </span>
-                  <span class="works_sub">WEB</span><span class="works-list-title">ポートフォリオサイト</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div id="load"></div>
+      <div class="hover__area" id="imageDisplay">
+        <span class="displayedImage-area"></span>
+        <img src="" alt="" id="displayedImage">
+      </div>
     </section>
+
 
     <!--footer-->
 
@@ -210,6 +209,28 @@
       duration: 1200,
       easing: 'ease-out-cubic',
       offset: 200,
+    });
+
+    $(document).ready(function () {
+      // 各ボタンにホバーイベントを設定
+      $('.works-img-hover').hover(function () {
+        // ホバーしたボタン以外のボタンに透明度を変更
+        $('.works-img-hover').not(this).addClass('faded');
+
+        // ホバーしたボタンからdata-img属性を取得
+        var imgSrc = $(this).data('img');
+
+        // テキストを非表示にして、画像を表示
+        $('.displayedImage-area').hide();
+        $('#displayedImage').attr('src', imgSrc).show();
+      }, function () {
+        // 透明度を元に戻す
+        $('.works-img-hover').removeClass('faded');
+
+        // 画像を非表示にして、テキストを再表示
+        $('#displayedImage').hide();
+        $('.displayedImage-area').show();
+      });
     });
   </script>
 </body>

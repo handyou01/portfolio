@@ -260,6 +260,7 @@ html{
     position: relative;
     margin: 0 auto;
     padding: 165px 0 180px;
+    z-index: 9000;
 }
 
 .section__title{
