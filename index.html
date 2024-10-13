@@ -707,11 +707,15 @@
     $(function () {
       function end_loading() {
         // フェードアウトする時間
-        $('.loading').fadeOut(2000);
+        $('.loading').fadeOut(2000, function () {
+          $('body').css('overflow', 'auto'); // ローディングが終了したらスクロールを再許可
+        });
       }
 
       // ローディング画面を表示するかどうかのフラグをチェック
       if (!sessionStorage.getItem('hasLoaded')) {
+        $('body').css('overflow', 'hidden'); // ローディング中はスクロールを禁止
+
         $(window).on('load', function () {
           setTimeout(function () {
             $('.spinner').fadeIn(1000); // 0.5秒後にスピナーをフェードイン
@@ -731,6 +735,7 @@
         $('.loading').hide(); // ローディング画面を即座に非表示にする
       }
     });
+
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
