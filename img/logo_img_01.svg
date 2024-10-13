@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.14 149.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: NotoSansCJKjp-Regular-90ms-RKSJ-H, 'Noto Sans CJK JP';
+        font-size: 20.88px;
+        letter-spacing: .1em;
+      }
+
+      .cls-3 {
+        font-family: Belgium, Belgium;
+        font-size: 59.65px;
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <g id="img">
+    <g id="about_logo_img">
+      <g>
+        <circle class="cls-1" cx="74.57" cy="74.57" r="74.57"/>
+        <g>
+          <text class="cls-3" transform="translate(37.53 73.51)"><tspan x="0" y="0">+</tspan></text>
+          <text class="cls-3" transform="translate(78.78 82.93)"><tspan x="0" y="0">9</tspan></text>
+          <text class="cls-2" transform="translate(33.6 106.21)"><tspan x="0" y="0">たす</tspan></text>
+          <text class="cls-2" transform="translate(87.44 106.19)"><tspan x="0" y="0">く</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

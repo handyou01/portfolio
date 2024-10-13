@@ -48,7 +48,7 @@ html{
     z-index: 9999;
 }
 
-/* hamメニューの線を3本用意する */
+/* hamメニューの線を2本用意する */
 
 .hamburger span{
     width: 24px;
@@ -56,8 +56,8 @@ html{
     background-color: #fdfaf3;
     position: absolute;
     content: "";
-    top: 15px;
-    left: 11px;
+    top: 16px;
+    left: 12px;
     transition: .3s;
 }
 
@@ -89,7 +89,8 @@ html{
 .open span{
     background-color: #4E8CB9;
     transform: rotate(45deg);
-    top: 23px;
+    top: 24px;
+    left: 12px;
 }
 
 .open span::after{
@@ -169,7 +170,7 @@ html{
     height: 15px;
     position: absolute;
     right: 100%;
-    bottom: -5%;
+    bottom: 2%;
 }
 
 .scroll::after,
@@ -318,42 +319,6 @@ html{
 .top-works-list .works_sub{
     margin-right: 24px;
 }
-
-/*works animation*/
-
-
-/*
-.slide_right{
-    position: relative;
-}
-
-.slide_right::before {
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 280px;
-    background-color: #F5BBB3;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50px, 0);
-}
-
-.slide_right::before.is-active {
-    animation: slidein 1.2s ease-in-out forwards ;
-    opacity: 1;
-}
-
-@keyframes slidein{
-    0% {
-        transform: translate(-80px, 0);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0px, 0);
-    }
-}*/
-
-/*view all button*/
 
 .to-works__btn{
     position: absolute;
@@ -812,6 +777,24 @@ margin: 0 auto;
     top: 28px;
 }
 
+.hamburger span{
+    top: 15px;
+    left: 10px;
+}
+
+.hamburger span::after{
+    bottom: -14px;
+}
+
+.open span{
+    top: 22px;
+    left: 10px;
+}
+
+.open span::after{
+    bottom: 0;
+}
+
 .header_nav {
     position: fixed;
     width: 100%;
@@ -892,23 +875,23 @@ display: none;
 .detail__table dt{
     width: 100%;
     line-height: 1.5rem;
-}
-
-.detail__table dd{
-    width: 100%;
-    margin-left: 1em;
-    padding-bottom: 1rem;
     position: relative;
 }
 
-.detail__table dd::before{
+.detail__table dt::before{
     position: absolute;
     content: "";
     width: 5px;
     height: 16px;
     background-color: #4E8CB9;
-    top: 0.6rem;
+    top: 0.2rem;
     left: -1rem;
+}
+
+.detail__table dd{
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-left: 0;
 }
 
 .detail__text{
@@ -916,10 +899,7 @@ display: none;
     letter-spacing: 0.1em;
 }
 
-.works__detail-img{
-    display: none;
-}
-
+.works__detail-img,
 .works__btn-pc,
 .works__btn-sp{
     display: none;

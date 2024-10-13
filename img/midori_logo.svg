@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310.58 314.95">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 7.35px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #bd393b;
+      }
+
+      .cls-1, .cls-5, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 15.88px;
+      }
+
+      .cls-2, .cls-5 {
+        font-family: Constantia-Bold, Constantia;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-5, .cls-6 {
+        font-size: 58.21px;
+      }
+
+      .cls-7, .cls-6 {
+        fill: #bd393b;
+      }
+
+      .cls-3 {
+        stroke-width: 10.58px;
+      }
+
+      .cls-6 {
+        font-family: Br-Ocrb, BR-OCRB;
+      }
+
+      .cls-4 {
+        stroke-width: 5.29px;
+      }
+    </style>
+  </defs>
+  <g id="img">
+    <g id="_ロゴ2大" data-name="ロゴ2大">
+      <circle class="cls-3" cx="155.29" cy="155.29" r="150"/>
+      <path class="cls-7" d="M155.29,45.95c-57.99,0-105,47.01-105,105h210c0-57.99-47.01-105-105-105Z"/>
+      <circle class="cls-4" cx="155.29" cy="155.29" r="15"/>
+      <g>
+        <g>
+          <path class="cls-1" d="M117.91,97.8s11.17,2.37,20.18,9.16c13.94,10.24,22.33,27.1,22.33,47.66,0,33.42-23.03,67.26-67.05,67.26-19.71,0-65.55-8.56-65.55-87.88,0-36.95,15.75-99.47,74.78-99.47,42.6,0,48.15,30.94,48.15,51.96,0,0-5.55,0-28.41-.22-.81-11.66,1.53-23.23-21.85-22.91-12.76.88-26.38,16.31-30.88,42.97,9.43-6.53,20.96-10.18,33.64-10.18,5.14,0,10.04.56,14.66,1.63"/>
+          <g>
+            <circle class="cls-1" cx="98.02" cy="156.82" r="26"/>
+            <path class="cls-1" d="M124.02,156.82c0,14.36-11.64,26-26,26-13.9,0-26-11.64-26-26l51.99-.05v.05Z"/>
+            <path class="cls-1" d="M111.08,156.88c-3.39.05-4.33,2.35-4.73,5.37-.45,3.39-2.45,5.46-4.69,6.32-1.93.73-5.43.78-7.48-.19-1.81-.85-3.14-2.17-3.83-4.68-.33-1.18-.38-3.57-.96-4.86-.58-1.31-3.03-1.79-4.84-1.79-1.28,0-10.31,0-12.5,0l-.02-.22c0-14.36,11.64-26,26-26s26,11.64,26,26c0,0-11.01.03-12.93.06Z"/>
+          </g>
+        </g>
+        <g>
+          <path class="cls-1" d="M210.25,221.4c-35.68-4.2-59.46-33.9-55.32-69.08,4.52-38.4,35.31-63.03,73.22-58.57,35.68,4.2,58.42,34,54.08,70.87-4.32,36.69-35.26,61.1-71.98,56.78Z"/>
+          <g>
+            <circle class="cls-1" cx="220.19" cy="158.39" r="26"/>
+            <path class="cls-1" d="M196.12,158.17c2.11.09,9.34.19,10.6.19,1.81,0,4.25.56,4.81,1.88.55,1.3.56,3.69.87,4.88.65,2.53,1.96,3.87,3.75,4.75,2.04,1.01,5.53,1.02,7.48.32,2.26-.81,4.29-2.85,4.81-6.23.46-3.02,1.43-5.08,4.83-5.11,1.75-.01,8.65.07,12.07.2"/>
+          </g>
+        </g>
+      </g>
+      <text class="cls-6" transform="translate(26.04 217.76) rotate(57.13)"><tspan x="0" y="0">s</tspan></text>
+      <text class="cls-6" transform="translate(40.68 241.65) rotate(46)"><tspan x="0" y="0">i</tspan></text>
+      <text class="cls-6" transform="translate(59.67 262.28) rotate(34.88)"><tspan x="0" y="0">n</tspan></text>
+      <text class="cls-6" transform="translate(82.31 278.89) rotate(23.65)"><tspan x="0" y="0">c</tspan></text>
+      <text class="cls-6" transform="translate(107.81 290.8) rotate(12.31)"><tspan x="0" y="0">e</tspan></text>
+      <text class="cls-6" transform="translate(135.3 297.46) rotate(1)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-6" transform="translate(163.12 298.65) rotate(-10.09)"><tspan x="0" y="0">1</tspan></text>
+      <text class="cls-6" transform="translate(197.71 292.47) rotate(-24.25)"><tspan x="0" y="0">9</tspan></text>
+      <text class="cls-6" transform="translate(229.67 278.04) rotate(-38.26)"><tspan x="0" y="0">6</tspan></text>
+      <text class="cls-6" transform="translate(257.15 256.35) rotate(-52.15)"><tspan x="0" y="0">4</tspan></text>
+      <g>
+        <text class="cls-2" transform="translate(203.02 91.85)"><tspan x="0" y="0">th</tspan></text>
+        <text class="cls-5" transform="translate(203.02 91.85)"><tspan x="0" y="0">th</tspan></text>
+        <text class="cls-5" transform="translate(203.02 91.85)"><tspan x="0" y="0">th</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
